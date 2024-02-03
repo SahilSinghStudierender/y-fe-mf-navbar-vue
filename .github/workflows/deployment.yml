@@ -36,7 +36,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/y-fe-mf-homepage:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/y-fe-mf-navbar-vue:latest
           context: .
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64
